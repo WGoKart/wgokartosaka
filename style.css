@@ -1,0 +1,341 @@
+body {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: black;
+
+    padding: 20px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.logo {
+    color: white;
+
+    font-size: 25px;
+
+    font-weight: bold;
+}
+
+.menu a {
+    color: white;
+
+    text-decoration: none;
+
+    margin-left: 20px;
+
+    font-size: 15px;
+}
+
+.menu a:hover {
+    color: yellow;
+}
+
+
+
+.book-btn {
+    display: inline-block;
+
+    margin-top: 30px;
+
+    padding: 15px 40px;
+
+    background-color: #b0f2ff;
+
+    color: black;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border-radius: 10px;
+
+    font-size: 20px;
+    
+}
+.book-btn:hover {
+    background-color: orange;
+}
+
+
+
+.hero {
+    height: 700px;
+
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,0.4),
+            rgba(0,0,0,0.4)
+        ),
+        url("images/IMG_4952.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero h1 {
+    position: absolute;
+
+    top: -10px;
+    font-size: 75px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+     position: absolute;
+
+    top: 550px;
+    font-size: 24px;
+}
+
+
+
+.tours {
+    padding: 100px 50px;
+
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ),
+        url("images/S__7921667_0.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: rgb(0, 0, 0);
+}
+
+.tour-card {
+    display: block;
+
+    width: 320px;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    background: rgba(255,255,255,0.95);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+
+    text-decoration: none;
+
+    color: inherit;
+
+    transition: 0.3s;
+}
+
+.tour-card {
+    width: 320px;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    background: rgba(255,255,255,0.95);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+
+    transition: 0.3s;
+}
+
+.tour-card h3 {
+    font-size: 28px;
+
+    margin-bottom: 15px;
+
+    color: #222;
+}
+
+.tour-card:hover {
+    transform: translateY(-10px);
+
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+.tours h2 {
+    font-size: 60px;
+
+    color: rgb(255, 58, 87);
+}
+
+
+
+.pricing {
+    padding: 120px 50px;
+
+    text-align: center;
+
+     background-image:
+        linear-gradient(
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ),
+        url("images/S__7921670_0.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: rgb(132, 202, 202);
+}
+
+.pricing h2 {
+    font-size: 60px;
+
+    margin-bottom: 60px;
+}
+.pricing h3 {
+     color: rgb(59, 59, 59);
+}
+.pricing div {
+     color: rgb(168, 98, 98);
+}
+.pricing p {
+     color: rgb(59, 59, 59);
+}.pricing li {
+     color: rgb(59, 59, 59);
+}
+
+
+
+.price-btn {
+    display: inline-block;
+
+    margin-top: 30px;
+
+    padding: 15px 40px;
+
+    background-color: #636363;
+
+    color: black;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border-radius: 10px;
+
+    font-size: 20px;
+    
+}
+.price-btn:hover {
+    background-color: rgb(255, 255, 255);
+}
+.pricing-cards {
+    display: flex;
+
+    justify-content: center;
+
+    margin: 0 auto;
+
+    width: 300px;
+
+    background: rgb(199, 199, 199);
+
+    padding: 30px;
+
+    border-radius: 30px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    
+}
+
+
+
+.faq {
+    padding: 120px 50px;
+
+    background-color: white;
+
+    text-align: center;
+}
+.faq h2 {
+    font-size: 60px;
+
+    margin-bottom: 20px;
+}
+.faq-item {
+    max-width: 900px;
+
+    margin: 20px auto;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    background: #c4c4c4;
+
+    text-align: left;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+.faq-item summary {
+    font-size: 24px;
+
+    margin-bottom: 10px;
+}
+.faq-item p {
+    color: #4e4e4e;
+
+    line-height: 1.8;
+}
+details {
+    max-width: 900px;
+
+    margin: 20px auto;
+
+    padding: 20px;
+
+    background: rgb(107, 107, 107);
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    text-align: left;
+}
+
+
+.about {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 40px;
+}
+
+.about p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+
+
