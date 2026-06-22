@@ -1,12 +1,21 @@
 body{
     margin:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:100vh;
+
     overflow:hidden;
 }
 
 .map{
     position:relative;
-    width:1414px;
-    height:842px;
+    width:min(95vw,1414px);
+    aspect-ratio:1414/842;
     margin:auto;
 }
 
@@ -15,6 +24,7 @@ body{
     height:100%;
     display:block;
 }
+
 .pin{
     position:absolute;
 
