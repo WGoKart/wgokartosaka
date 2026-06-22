@@ -5,15 +5,16 @@ body{
 
 .map{
     position:relative;
-    width:100%;
+    width:1414px;
+    height:842px;
+    margin:auto;
 }
 
 .map img{
     width:100%;
-    height:auto;
+    height:100%;
     display:block;
 }
-
 .pin{
     position:absolute;
 
