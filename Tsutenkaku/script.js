@@ -33,7 +33,7 @@ function hidePopup(){
 
 }
 
-document.querySelector(".map").addEventListener("click",(e)=>{
+/*document.querySelector(".map").addEventListener("click",(e)=>{
 
     const rect = e.currentTarget.getBoundingClientRect();
 
@@ -45,4 +45,4 @@ document.querySelector(".map").addEventListener("click",(e)=>{
 
     alert(`top:${top}%; left:${left}%;`);
 
-});
+});*/
