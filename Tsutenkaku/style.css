@@ -11,8 +11,8 @@ body{
 .map{
     position:relative;
 
-    width:90vw;
-    max-width:1400px;
+    width:75vw;
+    max-width:1200px;
 
     aspect-ratio:1414 / 842;
 }
