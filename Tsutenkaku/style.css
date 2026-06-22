@@ -1,26 +1,18 @@
 body{
     margin:0;
-}
-
-.map-container{
-    width:100%;
-    display:flex;
-    justify-content:center;
+    overflow:hidden;
 }
 
 .map{
     position:relative;
-
-    width:75vw;
-    max-width:1200px;
-
-    aspect-ratio:1414 / 842;
+    width:100vw;
+    height:100vh;
 }
 
 .map img{
     width:100%;
     height:100%;
-
+    object-fit:contain;
     display:block;
 }
 
