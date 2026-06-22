@@ -26,6 +26,12 @@ nav {
     font-weight: bold;
 }
 
+.logo img{
+    height:75px;
+    width:auto;
+    display:block;
+}
+
 .menu a {
     color: white;
 
