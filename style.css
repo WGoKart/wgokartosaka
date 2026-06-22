@@ -27,9 +27,13 @@ nav {
 }
 
 .logo img{
-    height:75px;
-    width:auto;
-    display:block;
+    height:60px;
+    transform:scale(1.5);
+    transform-origin: left center;
+}
+
+.logo a{
+    display:inline-block;
 }
 
 .menu a {
