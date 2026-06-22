@@ -349,3 +349,46 @@ details {
 
 
 
+.car-banner{
+
+    background: rgb(15, 15, 15);
+
+    height:70px;
+
+    overflow:hidden;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.car-track{
+
+    display:flex;
+
+    gap:150px;
+
+    width:max-content;
+
+    animation:driveLeft 15s linear infinite;
+
+}
+
+.car-track img{
+
+    height:70px;
+
+}
+
+@keyframes driveLeft{
+
+    from{
+        transform:translateX(0);
+    }
+
+    to{
+        transform:translateX(-50%);
+    }
+
+}
