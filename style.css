@@ -128,8 +128,8 @@ nav {
 
     background-image:
         linear-gradient(
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
+            rgba(255, 255, 255, 0.5),
+            rgba(0, 0, 0, 0.5)
         ),
         url("images/S__7921667_0.jpg");
 
@@ -160,19 +160,6 @@ nav {
     transition: 0.3s;
 }
 
-.tour-card {
-    width: 320px;
-
-    padding: 30px;
-
-    border-radius: 20px;
-
-    background: rgba(255,255,255,0.95);
-
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-
-    transition: 0.3s;
-}
 
 .tour-card h3 {
     font-size: 28px;
@@ -188,9 +175,11 @@ nav {
     box-shadow: 0 20px 40px rgba(0,0,0,0.25);
 }
 .tours h2 {
-    font-size: 60px;
+    font-size: 80px;
 
-    color: rgb(255, 58, 87);
+    margin-bottom: 200px;
+    
+    color: rgb(0, 0, 0);
 }
 
 
@@ -290,8 +279,8 @@ nav {
 
      background-image:
         linear-gradient(
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
+            rgba(255, 255, 255, 0.5),
+            rgba(0, 0, 0, 0.5)
         ),
         url("images/S__7921670_0.jpg");
 
@@ -299,7 +288,7 @@ nav {
 
     background-position: center;
 
-    color: rgb(132, 202, 202);
+    color: rgb(13, 13, 13);
 }
 
 .pricing h2 {
@@ -308,14 +297,18 @@ nav {
     margin-bottom: 60px;
 }
 .pricing h3 {
+    font-size: 30px;
      color: rgb(59, 59, 59);
 }
 .pricing div {
+    font-size: 25px;
      color: rgb(168, 98, 98);
 }
 .pricing p {
+    font-size: 20px;
      color: rgb(59, 59, 59);
 }.pricing li {
+    font-size: 20px;
      color: rgb(59, 59, 59);
      text-align: left;
 }
@@ -329,7 +322,7 @@ nav {
 
     padding: 15px 40px;
 
-    background-color: #636363;
+    background-color: #b5b5b5;
 
     color: black;
 
@@ -343,7 +336,7 @@ nav {
     
 }
 .price-btn:hover {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(187, 218, 255);
 }
 .pricing-cards {
     display: flex;
@@ -354,7 +347,7 @@ nav {
 
     width: 300px;
 
-    background: rgb(199, 199, 199);
+    background: rgb(255, 255, 255);
 
     padding: 30px;
 
@@ -537,6 +530,63 @@ details {
     margin: auto;
     line-height: 1.8;
     font-size: 18px;
+}
+.about{
+
+    background:#000;
+
+    color:white;
+
+    text-align:center;
+
+    padding:80px 0;
+
+}
+
+.about-top-images,
+.about-bottom-images{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    margin:40px 0;
+
+}
+
+.about-top-images img,
+.about-bottom-images img{
+
+    width:450px;
+
+    height:300px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+}
+
+.about h2{
+
+    font-size:40px;
+
+    margin:30px 0;
+
+}
+
+.about p{
+
+    font-size:30px;
+
+    line-height:1.8;
+
+    max-width:800px;
+
+    margin:auto;
+
 }
 
 
