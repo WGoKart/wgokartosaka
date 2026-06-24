@@ -195,6 +195,94 @@ nav {
 
 
 
+.license-section{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:50px;
+
+    padding:80px 10%;
+
+    background:#111;
+
+    color:white;
+
+}
+
+.license-text{
+
+    flex:1;
+
+}
+
+.license-text h2{
+
+    font-size:45px;
+
+    margin-bottom:30px;
+
+}
+
+.license-text h3{
+
+    margin-top:60px;
+
+    margin-bottom:10px;
+
+}
+
+.license-text p{
+
+    line-height:1.8;
+
+}
+
+.license-gallery{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.license-gallery img{
+
+    width:250px;
+
+    max-width:400px;
+
+    height:auto;
+
+    border-radius:12px;
+
+    display:block;
+
+}
+
+@media (max-width:768px){
+
+    .license-section{
+
+        flex-direction:column;
+
+    }
+
+    .license-gallery{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+
 .pricing {
     padding: 120px 50px;
 
@@ -229,6 +317,7 @@ nav {
      color: rgb(59, 59, 59);
 }.pricing li {
      color: rgb(59, 59, 59);
+     text-align: left;
 }
 
 
@@ -298,10 +387,19 @@ nav {
     border-radius:20px;
 }
 
-.access-info{
-    width:100%;
+.access-top{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap:40px;
     max-width:1200px;
-    margin:auto;
+    margin:0 auto;
+    padding:0 50px;
+    box-sizing:border-box;
+}
+
+.access-info{
+    flex:1;
     padding:0 50px;
     box-sizing:border-box;
 }
@@ -328,19 +426,13 @@ nav {
 }
 
 .access-info a{
-
     color:#ff4343;
-
     text-decoration:none;
-
     font-weight:600;
-
 }
 
 .access-info a:hover{
-
     color:rgb(39, 151, 255);
-
 }
 
 .info-block{
@@ -350,6 +442,29 @@ nav {
 .highlight{
     color:#ff7a00;
     font-weight:bold;
+}
+
+.access-gallery{
+    width:500px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    flex:2;
+}
+
+.access-gallery img{
+    width:100%;
+    border-radius:12px;
+    display:block;
+}
+
+@media (max-width:768px){
+    .access-top{
+        flex-direction:column;
+    }
+    .access-gallery{
+        width:100%;
+    }
 }
 
 
