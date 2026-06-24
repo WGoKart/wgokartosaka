@@ -1,3 +1,4 @@
-const track = document.querySelector(".car-track");
-
-track.innerHTML += track.innerHTML;
+document.querySelectorAll(".car-track")
+.forEach(track => {
+    track.innerHTML += track.innerHTML;
+});

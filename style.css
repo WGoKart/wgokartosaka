@@ -21,7 +21,7 @@ nav {
 .logo {
     color: white;
 
-    font-size: 25px;
+    font-size: 30px;
 
     font-weight: bold;
 }
@@ -43,7 +43,7 @@ nav {
 
     margin-left: 20px;
 
-    font-size: 15px;
+    font-size: 25px;
 }
 
 .menu a:hover {
@@ -563,7 +563,7 @@ details {
 
     width:max-content;
 
-    animation:driveLeft 20s linear infinite;
+    animation:driveLeft 15s linear infinite;
 
 }
 
