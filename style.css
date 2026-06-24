@@ -543,7 +543,7 @@ details {
 
 .car-banner{
 
-    background: rgb(15, 15, 15);
+    background: rgb(0, 0, 0);
 
     height:70px;
 
@@ -563,13 +563,25 @@ details {
 
     width:max-content;
 
-    animation:driveLeft 15s linear infinite;
+    will-change:transform;
+
+    transform:translateZ(0);
+
+    backface-visibility: hidden;
+
+    animation:driveLeft 8s linear infinite;
 
 }
 
 .car-track img{
 
-    height:70px;
+    width:90px;
+
+    height:40px;
+
+    object-fit:contain;
+
+    flex-shrink:0;
 
 }
 
@@ -580,7 +592,7 @@ details {
     }
 
     to{
-        transform:translateX(-50%);
+        transform:translateX(calc(-50% - 75px));
     }
 
 }
