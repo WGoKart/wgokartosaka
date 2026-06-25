@@ -18,6 +18,17 @@ nav {
     align-items: center;
 }
 
+.hero,
+.tours,
+.pricing,
+.faq,
+.about,
+.access{
+
+    min-height:100vh;
+
+}
+
 .logo {
     color: white;
 
