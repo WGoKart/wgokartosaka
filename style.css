@@ -61,6 +61,18 @@ nav {
     color: yellow;
 }
 
+.menu-toggle{
+
+    display:none;
+
+    color:white;
+
+    font-size:32px;
+
+    cursor:pointer;
+
+}
+
 
 
 .book-btn {
@@ -670,7 +682,14 @@ details {
 @media (max-width:768px){
 
     /* 導覽列 */
+
+    .logo img{
+        height:35px;
+        transform:none;
+    }
     nav{
+        flex-direction: column;
+        gap: 15px;
         padding:15px 20px;
     }
 
@@ -679,6 +698,68 @@ details {
         font-size:14px;
         flex-wrap:wrap;
         justify-content:center;
+    }
+
+    .menu a{
+
+        font-size:16px;
+
+        margin-left:12px;
+
+    }
+
+    nav{
+
+        display:flex;
+
+        justify-content:space-between;
+
+        align-items:center;
+
+        padding:15px 20px;
+
+    }
+
+    .menu-toggle{
+
+        display:block;
+
+    }
+
+    .menu{
+
+        display:none;
+
+        position:absolute;
+
+        top:75px;
+
+        left:0;
+
+        width:100%;
+
+        background:black;
+
+        flex-direction:column;
+
+        text-align:center;
+
+        padding:20px 0;
+
+    }
+
+    .menu.active{
+
+        display:flex;
+
+    }
+
+    .menu a{
+
+        margin:15px 0;
+
+        font-size:20px;
+
     }
 
     /* Hero */
