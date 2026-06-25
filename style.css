@@ -188,7 +188,9 @@ nav {
 .tours h2 {
     font-size: 80px;
 
-    margin-bottom: 200px;
+    margin-top: -30px;
+
+    margin-bottom: 50px;
     
     color: rgb(0, 0, 0);
 }
@@ -654,6 +656,96 @@ details {
 
     to{
         transform:translateX(calc(-50% - 75px));
+    }
+
+}
+
+
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width:768px){
+
+    /* 導覽列 */
+    nav{
+        padding:15px 20px;
+    }
+
+    .menu{
+        gap:15px;
+        font-size:14px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    /* Hero */
+    .hero h1{
+        font-size:42px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    /* Tours */
+    .tour-cards{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    /* Pricing */
+    .pricing-cards{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    /* Access */
+    .access-top{
+        flex-direction:column;
+    }
+
+    .access-gallery{
+        width:100%;
+        align-items:center;
+    }
+
+    .access-gallery img{
+        width:90%;
+        max-width:400px;
+    }
+
+    .access-map iframe{
+        height:350px;
+    }
+
+    /* About */
+    .about-top-images,
+    .about-bottom-images{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .about-top-images img,
+    .about-bottom-images img{
+        width:90%;
+        height:auto;
+    }
+
+    /* Requirement */
+    .license-section{
+        flex-direction:column;
+    }
+
+    .license-gallery{
+        align-items:center;
+    }
+
+    .license-gallery img{
+        width:90%;
+        max-width:350px;
     }
 
 }
