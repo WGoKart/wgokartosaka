@@ -47,6 +47,14 @@ nav {
     display:inline-block;
 }
 
+.menu{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
 .menu a {
     color: white;
 
@@ -279,22 +287,6 @@ nav {
 
 }
 
-@media (max-width:768px){
-
-    .license-section{
-
-        flex-direction:column;
-
-    }
-
-    .license-gallery{
-
-        grid-template-columns:1fr;
-
-    }
-
-}
-
 
 
 .pricing {
@@ -474,15 +466,6 @@ nav {
     width:100%;
     border-radius:12px;
     display:block;
-}
-
-@media (max-width:768px){
-    .access-top{
-        flex-direction:column;
-    }
-    .access-gallery{
-        width:100%;
-    }
 }
 
 
@@ -672,9 +655,6 @@ details {
 
 }
 
-
-
-
 /* =========================
    Mobile
 ========================= */
@@ -683,68 +663,59 @@ details {
 
     /* 導覽列 */
 
+    .logo{
+        position:absolute;
+        left:50%;
+        transform: translateX(-50%);
+    }
+
     .logo img{
-        height:35px;
-        transform:none;
-    }
-    nav{
-        flex-direction: column;
-        gap: 15px;
-        padding:15px 20px;
-    }
-
-    .menu{
-        gap:15px;
-        font-size:14px;
-        flex-wrap:wrap;
-        justify-content:center;
-    }
-
-    .menu a{
-
-        font-size:16px;
-
-        margin-left:12px;
-
+        height:40px;
     }
 
     nav{
-
+        position:relative;
         display:flex;
-
-        justify-content:space-between;
-
+        justify-content:center;
         align-items:center;
-
-        padding:15px 20px;
-
+        padding:20px;
     }
 
     .menu-toggle{
-
         display:block;
-
+        position:absolute;
+        right:20px;
+        top:50%;
+        transform:translateY(-50%);
+        font-size:32px;
+        color:white;
+        cursor:pointer;
+        z-index:1001;
     }
 
     .menu{
 
         display:none;
 
-        position:absolute;
+        position:fixed;
 
-        top:75px;
+        top:0;
 
         left:0;
 
-        width:100%;
+        width:100vw;
 
-        background:black;
+        height:100vh;
+
+        background:rgba(0,0,0,.95);
 
         flex-direction:column;
 
-        text-align:center;
+        justify-content:center;
 
-        padding:20px 0;
+        align-items:center;
+
+        z-index:1000;
 
     }
 
@@ -756,9 +727,13 @@ details {
 
     .menu a{
 
-        margin:15px 0;
+        color:white;
 
-        font-size:20px;
+        font-size:28px;
+
+        margin:18px 0;
+
+        text-decoration:none;
 
     }
 
