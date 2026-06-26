@@ -676,71 +676,36 @@ details {
     .mobile-menu{
         display:none;
         position:fixed;
-        inset:0;
-        background:rgba(0,0,0,.95);
+        top:80px;
+        left:0;
+        width:100%;
+        background:#111;
+        box-shadow:0 8px 20px rgba(0,0,0,.3);
         flex-direction:column;
-        justify-content:center;
-        align-items:center;
-        z-index:9999;
+        z-index:999;
     }
 
     .mobile-menu.active{
         display:flex;
     }
 
-      .menu-toggle{
-
-        display:block;
-
-        background:none;
-
-        border:none;
-
-        color:#fff;
-
-        font-size:32px;
-
-        cursor:pointer;
-
-    }
-
-    .menu{
-
-        position:fixed;
-
-        inset:0;
-
-        display:none;
-
-        flex-direction:column;
-
-        justify-content:center;
-
-        align-items:center;
-
-        background:rgba(0,0,0,.95);
-
-        z-index:1500;
-
-    }
-
-    .menu.active{
-
-        display:flex;
-
-    }
-
-    .menu a{
-
+    .mobile-menu a{
         color:white;
-
-        font-size:28px;
-
-        margin:18px 0;
-
         text-decoration:none;
-
+        padding:18px 20px;
+        border-bottom:1px solid #333;
+        font-size:20px;
     }
+
+      .menu-toggle{
+        display:block;
+        background:none;
+        border:none;
+        color:#fff;
+        font-size:32px;
+        cursor:pointer;
+    }
+
 
     /* Hero */
     .hero h1{
