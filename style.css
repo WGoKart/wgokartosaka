@@ -647,23 +647,22 @@ details {
 
     /* 導覽列 */
 
+    nav{
+        position:relative;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        height:80px;
+        background:#000;
+    }
+
     .logo{
-        position:absolute;
-        left:50%;
-        transform: translateX(-50%);
+        position:static;
+        transform:none;
     }
 
     .logo img{
         height:40px;
-    }
-
-    nav{
-        position:relative;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        height:80px;
-        background:#000;
     }
 
     .desktop-menu{
@@ -689,15 +688,9 @@ details {
         display:flex;
     }
 
-    .menu-toggle{
+      .menu-toggle{
 
-        position:absolute;
-
-        right:20px;
-
-        top:50%;
-
-        transform:translateY(-50%);
+        display:block;
 
         background:none;
 
@@ -705,11 +698,9 @@ details {
 
         color:#fff;
 
-        font-size:34px;
+        font-size:32px;
 
         cursor:pointer;
-
-        z-index:2000;
 
     }
 
