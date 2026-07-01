@@ -1,6 +1,7 @@
 body {
     font-family: "Outfit", sans-serif;
     margin: 0;
+    background: #000;
 }
 
 html {
@@ -15,7 +16,7 @@ nav{
     align-items:center;
 }
 
-.hero,
+.home,
 .tours,
 .pricing,
 .faq,
@@ -87,7 +88,7 @@ nav{
 
 
 
-.hero {
+.home {
     height: 700px;
 
     background-image:
@@ -98,31 +99,25 @@ nav{
         url("images/home.jpg");
 
     background-size: cover;
-    background-position: center 90%;
+    background-position: center 80%;
 
     display: flex;
     flex-direction: column;
-
     justify-content: center;
     align-items: center;
-
     text-align: center;
-
+    position: relative;
     color: white;
 }
 
-.hero {
-    position: relative;
-}
-
-.hero h1 {
+.home h1 {
     position: absolute;
     top: -10px;
     font-size: 75px;
     margin-bottom: 10px;
 }
 
-.hero p {
+.home p {
     position: absolute;
     top: 530px;
     left:30px;
@@ -147,32 +142,32 @@ nav{
 }
 
 .tours h2 {
-    font-size: 80px;
-    margin-top: -30px;
-    margin-bottom: 50px;
+    font-size: 70px;
+    margin-top: 30px;
+    margin-bottom: 60px;
     color: rgb(0, 0, 0);
 }
 
 .tour-card {
     display: block;
-    width: 320px;
-    padding: 15px;
+    width: 350px;
+    padding: 10px;
     border-radius: 20px;
     background: rgba(255,255,255,0.95);
     box-shadow: 0 10px 30px rgba(0,0,0,0.15);
     text-decoration: none;
     color: inherit;
     transition: 0.3s;
-    margin-top:3%;
+    margin-top:1%;
 }
 
 .tour-card h3 {
-    font-size: 28px;
+    font-size: 25px;
     color: #222;
 }
 
 .tour-card p {
-    font-size: 20px;
+    font-size: 18px;
     color: #222;
 }
 
@@ -211,7 +206,7 @@ nav{
 
 .license-text h2{
 
-    font-size:45px;
+    font-size:38px;
 
     margin-bottom:30px;
 
@@ -324,12 +319,39 @@ nav{
 .price-btn:hover {
     background-color: rgb(187, 218, 255);
 }
-
+/*
 .pricing-cards {
     display: flex;
     justify-content: center;
     gap: 48px;
     flex-wrap: wrap;
+}
+*/
+
+.pricingSwiper{
+
+    width:100%;
+
+    padding:40px 0 60px;
+
+}
+
+.pricingSwiper .swiper-wrapper{
+
+    align-items:center;
+
+}
+
+.pricingSwiper .swiper-slide{
+
+    width:340px;
+
+    display:flex;
+
+    justify-content:center;
+
+    transition:.4s;
+
 }
 
 .price-card{
@@ -644,9 +666,9 @@ nav{
         cursor:pointer;
     }
 
-/* Hero */
+/* Home */
 
-     .hero{
+     .home{
 
         background-position:75% center;
 
@@ -654,7 +676,7 @@ nav{
 
     }
 
-    .hero h1{
+    .home h1{
 
         position:absolute;
 
@@ -672,7 +694,7 @@ nav{
 
     }
 
-    .hero p{
+    .home p{
 
         position:absolute;
 
@@ -758,7 +780,27 @@ nav{
     }
 
 /* Requirement */
-    
+
+    .license-text h2{
+        font-size:30px;
+        margin-top:50px;
+        margin-bottom:-20px;
+    }
+
+    .license-text h3{
+        font-size:20px;
+        margin-top:60px;
+        margin-bottom:10px;
+
+    }
+
+    .license-text p{
+
+        line-height:1.6;
+
+    }
+
+
     .license-section{
         padding:0 10% 40px;
         flex-direction:column;
@@ -775,26 +817,7 @@ nav{
 
 /* Pricing */
 
-    .pricing-cards{
-        display:flex;
-        flex-wrap:nowrap;
-        overflow-x:auto;
-        gap:20px;
-        scroll-snap-type:x mandatory;
-        -webkit-overflow-scrolling:touch;
-        padding:20px;
-        justify-content:flex-start;
-        scrollbar-width:none;
-    }
-
-    .pricing-cards::-webkit-scrollbar{
-        display:none;
-    }
-
     .price-card{
-        flex:0 0 85%;
-        min-width:85%;
-        scroll-snap-align:center;
         background:#fff;
         border-radius:25px;
         padding:25px;
@@ -825,26 +848,29 @@ nav{
 
     .price-btn {
         display: inline-block;
-
-        margin-top: 30px;
-
+        margin-top: 5px;
         padding: 15px 40px;
-
         background-color: #b5b5b5;
-
         color: black;
-
         text-decoration: none;
-
         font-weight: bold;
-
         border-radius: 10px;
-
         font-size: 20px;
-        
     }
     .price-btn:hover {
         background-color: rgb(187, 218, 255);
+    }
+
+    .pricingSwiper{
+        padding:20px 0 40px;
+    }
+
+    .pricingSwiper .swiper-slide{
+        width:70%;
+    }
+
+    .price-card{
+        padding:15px;
     }
 
 /* Access */
