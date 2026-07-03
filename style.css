@@ -227,27 +227,23 @@ nav{
 }
 
 .license-gallery{
-
     display:flex;
-
     flex-direction:column;
-
+    transition:.4s;
     gap:15px;
-
 }
 
 .license-gallery img{
-
     width:250px;
-
     max-width:400px;
-
     height:auto;
-
     border-radius:12px;
-
     display:block;
+    transition:transform .4s ease;
+}
 
+.license-gallery img:hover{
+    transform:scale(1.05);
 }
 
 
@@ -935,12 +931,12 @@ nav{
 /* FAQ */
 
     .faq{
-        padding:0 15px 30px;
+        padding:20px 15px 30px;
     }
 
     .faq h2{
         font-size:48px;
-        margin-top:40px;
+        margin-top:10px;
         margin-bottom:15px;
     }
 
