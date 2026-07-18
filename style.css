@@ -27,6 +27,26 @@ nav{
 
 }
 
+/*語言設定*/
+.language-switch{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.language-switch img{
+    width:32px;
+    height:auto;
+    border-radius:4px;
+    transition:.2s;
+}
+
+.language-switch img:hover{
+    transform:scale(1.1);
+}
+
+
+
 .logo{
     color:white;
     font-size:30px;
