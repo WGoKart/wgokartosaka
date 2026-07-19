@@ -230,6 +230,7 @@ const pricingSwiper = new Swiper(".pricingSwiper", {
     effect: "coverflow",
     centeredSlides: true,
     slidesPerView: "auto",
+    initialSlide:2,
     loop: true,
     grabCursor: true,
     allowTouchMove: true,
@@ -244,5 +245,6 @@ const pricingSwiper = new Swiper(".pricingSwiper", {
         modifier: 1,
         scale: 0.85,
         slideShadows: false
+        
     }
 });
